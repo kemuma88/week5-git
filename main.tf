@@ -2,7 +2,7 @@ resource "aws_lightsail_instance" "server1name" {
   name = "dev-server"
   blueprint_id ="ubunto_18_04"
   bundle_id = "medium_1_0"
-  availability_zone = "us-east-1"
+  availability_zone = "us-east-2"
   user_data = <<-EOF
               #!/bin/bash
               sudo apt-get update
